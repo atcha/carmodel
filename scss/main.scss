@@ -1,0 +1,12 @@
+@import "variables";
+@import "fonctions";
+@import "mixins";
+@import "color";
+@import "components/_navbar";
+
+body {
+   padding-top: 105px;
+   &.slide-active {
+      overflow-x: hidden;
+   }
+}
