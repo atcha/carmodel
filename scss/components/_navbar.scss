@@ -70,9 +70,6 @@
         }
       }
     }
-    @media screen and (max-width: $break-small) {
-      top: 1rem;
-    }
   }
   .navbar-collapse {
     .nav {
@@ -93,16 +90,46 @@
   .navbar-brand {
     color: $primary;
     font-size: 1rem;
-    .navbar-brand-logo {
-      @media screen and (max-width: $break-small) {
-        max-width: 50px;
-      }
-    }
+    position: relative;
   }
 
   .nav-pills {
     .nav-link {
       border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $break-small) {
+  .navbar {
+    .navbar-toggler {
+      top: 1rem;
+      z-index: 10;
+    }
+    
+    .navbar-collapse {
+      position: absolute;
+      right: -100%;
+      top: 10vh;
+      width: 100%;
+      display: block;
+      z-index: 1;
+      .nav {
+        flex-direction: column;
+        .nav-item {
+          margin-bottom: 5px;
+          .nav-link {
+            color: #FFFFFF;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      .navbar-brand-logo {
+        max-width: 50px;
+      }
     }
   }
 }

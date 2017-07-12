@@ -4,7 +4,6 @@
 
 $(document).ready(function () {
 
-
     //stick in the fixed 100% height behind the navbar but don't wrap it
     $('#slide-nav.navbar-inverse').after($('<div class="inverse" id="navbar-height-col"></div>'));
 

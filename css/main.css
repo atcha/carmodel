@@ -1,3 +1,7 @@
+.ico-home {
+  width: 1rem;
+  height: 1rem; }
+
 .navbar.navbar-light {
   background-color: rgba(255, 255, 255, 0.8); }
 .navbar .navbar-toggler {
@@ -56,9 +60,6 @@
         top: 12px; }
       .navbar .navbar-toggler .navbar-icon span:nth-child(3) {
         top: 24px; }
-  @media screen and (max-width: 576px) {
-    .navbar .navbar-toggler {
-      top: 1rem; } }
 .navbar .navbar-collapse .nav {
   align-items: stretch; }
   .navbar .navbar-collapse .nav .nav-item .nav-link {
@@ -72,13 +73,31 @@
       color: #FFF; }
 .navbar .navbar-brand {
   color: #0076be;
-  font-size: 1rem; }
-  @media screen and (max-width: 576px) {
-    .navbar .navbar-brand .navbar-brand-logo {
-      max-width: 50px; } }
+  font-size: 1rem;
+  position: relative; }
 .navbar .nav-pills .nav-link {
   border-radius: 0; }
 
+@media screen and (max-width: 576px) {
+  .navbar .navbar-toggler {
+    top: 1rem;
+    z-index: 10; }
+  .navbar .navbar-collapse {
+    position: absolute;
+    right: -100%;
+    top: 10vh;
+    width: 100%;
+    display: block;
+    z-index: 1; }
+    .navbar .navbar-collapse .nav {
+      flex-direction: column; }
+      .navbar .navbar-collapse .nav .nav-item {
+        margin-bottom: 5px; }
+        .navbar .navbar-collapse .nav .nav-item .nav-link {
+          color: #FFFFFF;
+          background-color: #0076be; }
+  .navbar .navbar-brand .navbar-brand-logo {
+    max-width: 50px; } }
 body {
   padding-top: 105px; }
   body.slide-active {
