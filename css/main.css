@@ -1,7 +1,3 @@
-.ico-home {
-  width: 1rem;
-  height: 1rem; }
-
 .navbar.navbar-light {
   background-color: rgba(255, 255, 255, 0.8); }
 .navbar .navbar-toggler {
@@ -64,10 +60,16 @@
   align-items: stretch; }
   .navbar .navbar-collapse .nav .nav-item .nav-link {
     color: #0076be;
+    display: flex;
+    align-items: center;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear; }
+    .navbar .navbar-collapse .nav .nav-item .nav-link .ico {
+      margin-right: 0.5em;
+      width: 1rem;
+      height: 1rem; }
     .navbar .navbar-collapse .nav .nav-item .nav-link:hover, .navbar .navbar-collapse .nav .nav-item .nav-link.active {
       background-color: #0076be;
       color: #FFF; }
@@ -95,7 +97,14 @@
         margin-bottom: 5px; }
         .navbar .navbar-collapse .nav .nav-item .nav-link {
           color: #FFFFFF;
-          background-color: #0076be; }
+          background-color: #0076be;
+          margin: 0;
+          -moz-transition: all 0.2s linear;
+          -o-transition: all 0.2s linear;
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear; }
+          .navbar .navbar-collapse .nav .nav-item .nav-link:hover, .navbar .navbar-collapse .nav .nav-item .nav-link:focus {
+            margin: .2em; }
   .navbar .navbar-brand .navbar-brand-logo {
     max-width: 50px; } }
 body {
